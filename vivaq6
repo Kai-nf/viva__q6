@@ -1,0 +1,106 @@
+package viva;
+public class Viva {
+    public static void main(String[] args) {
+        for (int row = 0; row < 7; row ++){
+            for(int col = 0; col < 77; col ++){
+                
+                //row 1 and each column
+                if (row == 0){
+                    //separated '*'
+                    if (col == 0 || col == 6 || col == 20 || col == 40 || col == 46)
+                        System.out.print('*');
+                    //consecutive '*'
+                    else if (col >= 10 && col <= 16)
+                        System.out.print('*');
+                    else if (col >= 30 && col <= 36)
+                        System.out.print('*');
+                    else if (col >= 50 && col <= 56)
+                        System.out.print('*');
+                    else if (col >= 60 && col <= 66)
+                        System.out.print('*');
+                    else if (col >= 70 && col <= 76)
+                        System.out.print('*');
+                    else 
+                        System.out.print(' ');
+                }
+                
+                //row 2 and each column
+                else if (row == 1){
+                    if (col == 10 || col == 16 || col == 20 || col == 30 || col == 36 || col == 41 || col == 45 || col == 50 || col == 63 || col == 70 || col == 76)
+                        System.out.print('*');
+                    else if (col >= 0 && col <= 1)
+                        System.out.print('*');   
+                    else if (col >= 5 && col <= 6)
+                        System.out.print('*');   
+                    else
+                        System.out.print(' ');
+                }
+                
+                //row 3 and each column
+                else if (row == 2){
+                    if (col == 0 || col == 2 || col == 4 || col == 6 || col == 10 || col == 16 || col == 20 || col == 30 || col == 36)
+                        System.out.print('*');
+                    else if (col == 42 || col == 44 || col == 50 || col == 63 || col == 70 || col == 76)
+                        System.out.print('*'); 
+                    else
+                        System.out.print(' ');
+                }
+                
+                //row 4 and each column
+                else if (row == 3){
+                    if (col == 0 || col == 3 || col == 6 || col == 20 || col == 43 || col == 63)
+                        System.out.print('*');
+                    else if (col >= 10 && col <= 16)
+                        System.out.print('*');
+                    else if (col >= 30 && col <= 36)
+                        System.out.print('*');
+                    else if (col >= 50 && col <= 56)
+                        System.out.print('*');
+                    else if (col >= 70 && col <= 76)
+                        System.out.print('*');
+                    else 
+                        System.out.print(' ');
+                }
+                
+                //row 5 and each column
+                else if (row == 4){
+                    if (col == 0 || col == 6 || col == 10 || col == 16 || col == 20 || col == 30 || col == 36)
+                        System.out.print('*');
+                    else if (col == 43 || col == 56 || col == 63 || col == 70 || col == 76)
+                        System.out.print('*'); 
+                    else
+                        System.out.print(' ');
+                }
+                
+                //row 6 and each column
+                else if (row == 5){
+                    if (col == 0 || col == 6 || col == 10 || col == 16 || col == 20 || col == 30 || col == 36)
+                        System.out.print('*');
+                    else if (col == 43 || col == 56 || col == 63 || col == 70 || col == 76)
+                        System.out.print('*'); 
+                    else
+                        System.out.print(' ');
+                }
+                
+                //row 7 and each column
+                else if (row == 6){
+                    if (col == 0 || col == 6 || col == 10 || col == 16 || col == 30 || col == 36)
+                        System.out.print('*');
+                    else if (col == 43 || col == 70 || col == 76)
+                        System.out.print('*'); 
+                    else if (col >= 20 && col <= 26)
+                        System.out.print('*');
+                    else if (col >= 50 && col <= 56)
+                        System.out.print('*');
+                    else if (col >= 60 && col <= 66)
+                        System.out.print('*');
+                    else
+                        System.out.print(' ');
+                }
+            }
+            //go to next row
+            System.out.println("");
+        }
+    }
+    
+}
